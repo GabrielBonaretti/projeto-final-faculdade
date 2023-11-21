@@ -1,0 +1,99 @@
+/* carrinho vazio no offcanva */
+
+#carrinho-vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-top: 2px solid #000;
+}
+
+#carrinho-vazio i {
+    margin-bottom: 2rem;
+}
+#off-footer {
+    padding: 16px;
+}
+
+/* preco total no off canva */
+
+#preco-total-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7.5% 7.5% 0% 7.5%;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    border-top: 2px solid #000;
+}
+
+#preco-total-div h5 {
+    margin: 0;
+}
+
+#preco-total-div p {
+    margin: 0;
+}
+
+#buy-button {
+    width: 85%;
+    margin: 7.5%;
+    height: 7.5vh;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+}
+
+/* produtos no carrinho offcanva */
+
+#carrinho-cheio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #000;
+}
+
+.produtos-no-carrinho {
+    width: 100%;
+    height: 15vh;
+    background-color: #ececec;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    padding: 6%;
+}
+
+.produtos-no-carrinho img{
+    height: 100%;
+    width: auto;
+}
+
+.texto-produto-carrinho {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.texto-produto-carrinho p{
+    margin: 0px;
+}
+
+.qnt-carrinho-produto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.qnt-carrinho-produto input{
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #000;
+}
+

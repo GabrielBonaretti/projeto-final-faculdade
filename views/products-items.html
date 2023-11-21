@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <!-- Links para arquivos de estilo -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-products-items.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-carrinho.css" media="screen" />
+
+    <!-- Links para bibliotecas externas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-faded">
+            <div class="container-fluid" id="conteudo">
+                <!-- Logo e botão de menu responsivo -->
+                <a class="navbar-brand w-200 mr-auto" href="../index.html">RETRO-STORE <i
+                        class="fa-solid fa-gamepad"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse  w-100" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#propaganda">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products-items.html">PLAY NOW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+                        </li>
+                        <li class="d-none d-lg-block" id="linha">
+                            <span></span>
+                        </li>
+
+                        <!-- Ícone do carrinho de compras -->
+                        <li id="carrinho">
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                                aria-controls="offcanvasExample" id="carrinho-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+
+                            <div id="qnt-carrinho">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <div id="particles-js"></div> <!-- Div para efeitos de partículas -->
+    
+        <section id="enjoy">
+            <h1>ENJOY THE NOSTALGIA!</h1> <!-- Título da seção -->
+        </section>
+    
+        <section id="filter">
+            <h5>PRODUCERS: </h5> <!-- Título da seção -->
+    
+            <!-- Filtros de checkbox para os produtores -->
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxNintendo" name="scales">
+                <label for="scales">NINTENDO</label>
+            </div>
+    
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxSega" name="horns">
+                <label for="horns">SEGA</label>
+            </div>
+    
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxTectoy" name="scales">
+                <label for="scales">TECTOY</label>
+            </div>
+    
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxSnk" name="horns">
+                <label for="horns">SNK</label>
+            </div>
+    
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxPhilips" name="scales">
+                <label for="scales">PHILIPS</label>
+            </div>
+    
+            <div class="checkBoxFilters">
+                <input type="checkbox" id="checkBoxAtari" name="horns">
+                <label for="horns">ATARI</label>
+            </div>
+        </section>
+    
+        <section id="produtos">
+            <article class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4">
+                    <!-- Primeiro produto -->
+                    <div class="col center-items nitendo">
+                        <a class="link" href="./product-gameboy-advance.html">
+                            <div class="items-vg">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/game_boy.png"> <!-- Imagem do produto -->
+                                </div>
+    
+                                <h2>Console Game Boy Advance - Nintendo</h2> <!-- Título do produto -->
+                                <h2>producer: nintendo</h2> <!-- Produtor do produto -->
+                                <h3>R$ 637,10</h3> <!-- Preço do produto -->
+                            </div>
+                        </a>
+                    </div>    
+
+                    <!-- Outros produtos seguem a mesma estrutura -->
+    
+                    <div class="col center-items nitendo">
+                        <a class="link" href="./product-supernintendo.html">
+                            <div class="items-vg">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/super_nintendo.png">
+                                </div>
+
+                                <h2>Console Super Nintendo - SNES</h2>
+                                <h2>producer: nintendo</h2>
+                                <h3>R$ 854,91</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items sega">
+                        <a class="link" href="./product-megadrive-3.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/sega.png">
+                                </div>
+
+                                <h2>Console Mega Drive 3 - Sega</h2>
+                                <h2>producer: SEGA</h2>
+                                <h3>R$ 314,90</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items nitendo">
+                        <a class="link" href="./product-gamecube.html">
+                            <div class="items-vg">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/gamecube.png">
+                                </div>
+
+                                <h2>Console Nintendo GameCube Prata - Nintendo</h2>
+                                <h2>producer: nintendo</h2>
+                                <h3>R$ 854,99</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items tectoy">
+                        <a class="link" href="./product-master-system-evolution.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/master_system.png">
+                                </div>
+
+                                <h2>Console Master System Evolution - Tectoy</h2>
+                                <h2>producer: tectoy</h2>
+                                <h3>R$ 134,91</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items sega">
+                        <a class="link" href="./product-megadrive-3-caixa.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/megadrive2.png">
+                                </div>
+
+                                <h2>Console Mega Drive 3 - Sega</h2>
+                                <h2>producer: sega</h2>
+                                <h3>R$ 539,91</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items snk">
+                        <a class="link" href="./product-neogeo.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/neo_geo.png">
+                                </div>
+
+                                <h2>Console Neo Geo CD - SNK</h2>
+                                <h2>producer: snk</h2>
+                                <h3>R$ 1.889,91</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items nitendo">
+                        <a class="link" href="./product-neogeo.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/nitendo64.png">
+                                </div>
+
+                                <h2>Console Nintendo 64 Preto - Nintendo</h2>
+                                <h2>producer: nintendo</h2>
+                                <h3>R$ 1.169,91</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col center-items philips">
+                        <a class="link" href="./product-odyssey2-1.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/odyssey.png">
+                                </div>
+
+                                <h2>Console Magnavox Odyssey 2 - Philips</h2>
+                                <h2>producer: PHILIPS</h2>
+                                <h3>R$ 629,91</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items atari">
+                        <a class="link" href="./product-atari2600.html">
+                            <div class="items-vg ">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/atari.png">
+                                </div>
+
+                                <h2>Console Atari 2600 - Atari</h2>
+                                <h2>producer: Atari</h2>
+                                <h3>R$ 314,90</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items nitendo">
+                        <a class="link" href="./product-gameboy-color.html">
+                            <div class="items-vg">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/gameboy.png">
+                                </div>
+
+                                <h2>Console Game Boy Color Amarelo - Nintendo</h2>
+                                <h2>producer: nintendo</h2>
+                                <h3>R$ 1.029,90</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col center-items philips">
+                        <a class="link" href="./product-odyssey2-2.html">
+                            <div class="items-vg">
+                                <div class="img-fundo">
+                                    <img src="../assets/img/odyssey2.png">
+                                </div>
+
+                                <h2>Console Magnavox Odyssey 2 - Philips</h2>
+                                <h2>producer: PHILIPS</h2>
+                                <h3>R$ 2.069,91</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contact-us">
+        <article class="container">
+            <div class="row">
+                <div class="col-xl grid-item">
+                    <h6>© 2023 Bonaretti, Inc. All Rights Reserved</h6>
+                </div>
+
+                <div class="col-xl grid-item">
+                    <a class="navbar-brand w-200 mr-auto" href="#">RETRO-STORE <i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+        </article>
+    </footer>
+
+    <!-- Carrinho de compras (offcanvas) -->
+    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <article class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasLabel">CART</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </article>
+        <article class="offcanvas-body">
+            <div id="carrinho-vazio">
+                <i class="fa-solid fa-cart-shopping fa-7x"></i>
+                <h5>THE CART IS EMPTY</h5>
+            </div>
+
+            <div id="carrinho-cheio">
+            </div>
+        </article>
+
+        <article id="off-footer">
+            <div id="preco-total-div">
+                <h5>Total:</h5>
+                <p id="preco-total">R$ 0</p>
+            </div>
+            <a href="./cart.html"><button id="buy-button">BUY NOW</button></a>
+        </article>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../assets/js/carrinho_item.js"></script>
+    <script src="../assets/js/filtro.js"></script>
+    <script src="../assets/js/carrosel.js"></script>
+    <script src="../assets/js/particles.js-master/particles.js"></script>
+    <script src="../assets/js/particles.js-master/particles.min.js"></script>
+    <script src="../assets/js/particles.js-master/demo/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ec9a07dcb5.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

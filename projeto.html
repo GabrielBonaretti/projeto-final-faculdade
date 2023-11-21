@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Inclusão de arquivos CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-index.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-carrinho.css" media="screen" />
+
+    <!-- Inclusão de arquivos CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Inclusão de arquivos CSS do Glide.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Inclusão de arquivos CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-faded">
+            <div class="container-fluid" id="conteudo">
+    
+                <!-- Logotipo da Retro-Store -->
+                <a class="navbar-brand w-200 mr-auto" href="index.html">RETRO-STORE <i class="fa-solid fa-gamepad"></i></a>
+    
+                <!-- Botão de menu responsivo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Itens do menu -->
+                <div class="collapse navbar-collapse w-100" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#propaganda">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/products-items.html">PLAY NOW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contact-us.html">CONTACT US</a>
+                        </li>
+                        <li class="d-none d-lg-block" id="linha">
+                            <span></span>
+                        </li>
+    
+                        <!-- Ícone de carrinho de compras -->
+                        <li id="carrinho">
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                                aria-controls="offcanvasExample" id="carrinho-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+    
+                            <!-- Quantidade de itens no carrinho -->
+                            <div id="qnt-carrinho">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div id="particles-js"></div>
+    
+        <!-- Seção de propaganda -->
+        <section class="container" id="propaganda">
+            <article class="row align-items-center">
+                <div class="col-md" id="texto-propaganda">
+                    <!-- Título da propaganda -->
+                    <h1>living for nostalgia</h1>
+                    <!-- Subtítulo da propaganda -->
+                    <h2>giving you the opportunity to reconnect with the past</h2>
+                    <!-- Botão para encontrar mais informações -->
+                    <a href="./views/products-items.html"><button>find now</button></a>
+                </div>
+    
+                <div class="col-md">
+                    <!-- Carrossel de imagens -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Item ativo do carrossel -->
+                            <div class="carousel-item active">
+                                <img src="./assets/img/master_system.png" class="d-block w-100" data-bs-interval="2000"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gameboy.png" class="d-block w-100" data-bs-interval="2000"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gamecube.png" class="d-block w-100" data-bs-interval="2000"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    
+        <!-- Seção de carrossel -->
+        <section id="carrossel">
+            <article id="retangulo">
+                <div class="glide" id="slide-show">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <!-- Slide do carrossel -->
+                            <li class="glide__slide">
+                                <a href="./views/product-nintendo64.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/nitendo64.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Nintendo 64</h3>
+                                </a>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <a href="./views/product-odyssey2-2.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/odyssey2.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Magnavox Odyssey 2</h3>
+                                </a>
+                            </li>
+
+                            <li class="glide__slide">
+                                <a href="./views/product-master-system-evolution.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/master_system.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Master System Evolution</h3>
+                                </a>
+                            </li>
+
+                            <li class="glide__slide">
+                                <a href="./views/product-neogeo.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/neo_geo.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Neo Geo</h3>
+                                </a>
+                            </li>
+
+                            <li class="glide__slide">
+                                <a href="./views/product-atari2600.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/atari.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Atari 2600</h3>
+                                </a>
+                            </li>
+
+                            <li class="glide__slide">
+                                <a href="./views/product-megadrive-3-caixa.html" id="links-slide-show">
+                                    <div class="imgs-fund-slide-show">
+                                        <img class="imgs-slide-show" src="./assets/img/megadrive2.png">
+                                    </div>
+                                    <h3 class="texto-imgs-slide-show">Mega Drive 3</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <!-- Botões de navegação do carrossel -->
+                        <button class="glide__arrow glide__arrow--left bg-dark" data-glide-dir="<"> <- </button>
+                        <button class="glide__arrow glide__arrow--right bg-dark" data-glide-dir=">"> -> </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    
+        <!-- Seção de banner -->
+        <section style="background-image: url(./assets/img/mario.jpg);" id="banner">
+            <article id="fundo-preto">
+                <div id="texto-banner">
+                    <!-- Título do banner -->
+                    <h1>Trust us!</h1>
+                    <!-- Subtítulo do banner -->
+                    <h2>we want to make you have fun</h2>
+                    <!-- Descrição do banner -->
+                    <h3>enjoy the classics, because in addition to being good they bring the best part:</h3>
+                    <h2>the nostalgia</h2>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+
+    <footer id="contact-us">
+        <article class="container">
+            <div class="row">
+                <!-- Coluna 1 -->
+                <div class="col-xl grid-item">
+                    <!-- Texto de direitos autorais -->
+                    <h6>© 2023 Bonaretti, Inc. All Rights Reserved</h6>
+                </div>
+    
+                <!-- Coluna 2 -->
+                <div class="col-xl grid-item">
+                    <!-- Endereço de e-mail de contato -->
+                    <h6>retrogame@email.com</h6>
+                </div>
+    
+                <!-- Coluna 3 -->
+                <div class="col-xl grid-item">
+                    <!-- Logotipo e nome da loja -->
+                    <a class="navbar-brand w-200 mr-auto" href="#">RETRO-STORE <i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+        </article>
+    </footer>
+
+    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <article class="offcanvas-header">
+            <!-- Título do carrinho -->
+            <h1 class="offcanvas-title" id="offcanvasLabel">CART</h1>
+            <!-- Botão de fechar o carrinho -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </article>
+        <article class="offcanvas-body">
+            <div id="carrinho-vazio">
+                <!-- Ícone do carrinho vazio -->
+                <i class="fa-solid fa-cart-shopping fa-7x"></i>
+                <!-- Mensagem indicando que o carrinho está vazio -->
+                <h5>THE CART IS EMPTY</h5>
+            </div>
+    
+            <div id="carrinho-cheio">
+                <!-- Aqui seria exibido o conteúdo do carrinho quando não estiver vazio -->
+            </div>
+        </article>
+    
+        <article id="off-footer">
+            <div id="preco-total-div">
+                <!-- Texto indicando o preço total -->
+                <h5>Total:</h5>
+                <!-- Preço total do carrinho -->
+                <p id="preco-total">R$ 0</p>
+            </div>
+            <!-- Botão para comprar agora -->
+            <a href="./views/cart.html"><button id="buy-button">BUY NOW</button></a>
+        </article>
+    </section>
+    
+
+    <!-- Importando arquivos javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./assets/js/carrinho_item.js"></script>
+    <script src="./assets/js/carrosel.js"></script>
+    <script src="./assets/js/particles.js-master/particles.js"></script>
+    <script src="./assets/js/particles.js-master/particles.min.js"></script>
+    <script src="./assets/js/particles.js-master/demo/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ec9a07dcb5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

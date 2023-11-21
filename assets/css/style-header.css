@@ -1,0 +1,39 @@
+/* header inicio */
+
+#conteudo {
+    width: 90%;
+    padding: 0.3rem;
+}
+
+#linha {
+    background-color: #000;
+    width: 1px;
+    height: 100%;
+    padding: 3% 0%;
+    margin: 1rem;
+}
+
+#carrinho {
+    display: flex;
+    align-items: center;
+}
+
+#carrinho-link {
+    background-color: #fff;
+    border: #fff;
+    color: #000;
+}
+
+li i {
+    padding: 8px;
+    margin-right: 4px;
+}
+
+
+#qnt-carrinho {
+    padding: 4px 8px;
+    border: 1px solid #000;
+    border-radius: 40%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+}

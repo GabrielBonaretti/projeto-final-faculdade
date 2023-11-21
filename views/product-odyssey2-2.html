@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odyssey 2</title>
+
+    <!-- Links para arquivos de estilo -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-product.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-carrinho.css" media="screen" />
+
+    <!-- Links para bibliotecas externas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-faded">
+            <div class="container-fluid" id="conteudo">
+                <!-- Logo e botão de menu responsivo -->
+                <a class="navbar-brand w-200 mr-auto" href="../index.html">RETRO-STORE <i
+                        class="fa-solid fa-gamepad"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse  w-100" id="navbarNav">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#propaganda">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products-items.html">PLAY NOW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+                        </li>
+                        <li class="d-none d-lg-block" id="linha">
+                            <span></span>
+                        </li>
+
+                        <!-- Ícone do carrinho de compras -->
+                        <li id="carrinho">
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                                aria-controls="offcanvasExample" id="carrinho-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+
+                            <div id="qnt-carrinho">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Visão geral do produto -->
+        <section class="container text-left" id="add-to-cart">
+            <article class="row">
+                <div class="col-xl-5">
+                    <img id="imagem-item" src="../assets/img/odyssey2.png">
+                </div>
+
+                <div class="col-xl-7" id="add-to-cart-text">
+                    <div class="texto">
+                        <h1 id="teste">CONSOLE MAGNAVOX ODYSSEY 2 - PHILIPS</h1>
+                    </div>
+                    <div class="texto" id="texto-preco-botao">
+                        <h2 id="price">price: R$ 2.069,91 </h2>
+                        <button id="botao-add-cart">ADD TO CART!</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Descrição detalhada do produto -->
+        <section id="description-product">
+            <article>
+                <h3 class="title">PRODUCT DESCRIPTION</h3>
+                <p id="descricao-texto">
+                    Odyssey 2 or Videopac was a very popular video game console in the 70s and 80s. Considered a
+                    cultural symbol of the 80s, it was a sales phenomenon in Brazil between 1984 and 1986 and its games
+                    remain in the memory of many who lived through it. youth at that time.
+
+                    Since today, Odyssey 2 is for many people an unforgettable symbol of its time. There are still many
+                    passionate fans producing new games, even though it's pretty outdated. Experience nostalgic gaming
+                    with this amazing console through classics like Munchkin, Invaders from Hyperspace, Demon Attack,
+                    Cosmic Conflict, Frogger, Defender and many other hits of the time.
+                </p>
+            </article>
+
+            <article class="separar">
+                <h3 class="title">specifications</h3>
+                <div class="responsive-tables">
+                    <table>
+                        <tbody>
+                            <tr class="cinza">
+                                <td>MANUFACTURER:</td>
+                                <td>PHILIPS</td>
+                            </tr>
+
+                            <tr>
+                                <td>VOLTAGE:</td>
+                                <td>BIVOLT</td>
+                            </tr>
+
+                            <tr class="cinza">
+                                <td>COLOR:</td>
+                                <td>SILVER AND BLACK</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>MODEL:</td>
+                                <td>MAGNAVOX ODYSSEY 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="separar">
+                <h3 class="title">INCLUDED ITEMS</h3>
+                <div class="responsive-tables">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>CONSOLE</td>
+                            </tr>
+
+                            <tr class="cinza">
+                                <td>CONTROLS</td>
+                            </tr>
+
+                            <tr>
+                                <td>BOX</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contact-us">
+        <article class="container">
+            <div class="row">
+                <div class="col-xl grid-item">
+                    <h6>© 2023 Bonaretti, Inc. All Rights Reserved</h6>
+                </div>
+
+                <div class="col-xl grid-item">
+                    <a class="navbar-brand w-200 mr-auto" href="#">RETRO-STORE <i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+        </article>
+    </footer>
+
+    <!-- Carrinho de compras (offcanvas) -->
+    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <article class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasLabel">CART</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </article>
+        <article class="offcanvas-body">
+            <div id="carrinho-vazio">
+                <i class="fa-solid fa-cart-shopping fa-7x"></i>
+                <h5>THE CART IS EMPTY</h5>
+            </div>
+
+            <div id="carrinho-cheio">
+            </div>
+        </article>
+
+        <article id="off-footer">
+            <div id="preco-total-div">
+                <h5>Total:</h5>
+                <p id="preco-total">R$ 0</p>
+            </div>
+            <a href="./cart.html"><button id="buy-button">BUY NOW</button></a>
+        </article>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../assets/js/carrinho_item.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ec9a07dcb5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

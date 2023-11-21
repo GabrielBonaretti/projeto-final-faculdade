@@ -1,0 +1,73 @@
+/* item no modal de confimação */
+
+#products {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products h5{
+    text-decoration: underline;
+}
+
+.linha {
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    margin: 15px;
+}
+
+.item-confimation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 5% 0%;
+}
+
+.item-confimation img {
+    width: 100px;
+    height: 100px;
+    margin-right: 5%;
+}
+
+.descriptiom-product {
+    text-transform: uppercase;
+}
+
+.descriptiom-product p{
+    margin: 0;
+}
+
+@media (max-width: 470px) {
+    .item-confimation {
+        flex-direction: column;
+    }
+
+    .item-confimation img {
+        margin-right: 0%;
+    }
+
+    .descriptiom-product {
+        text-align: center;
+    }
+}
+
+/* descricao pessoa modal de confirmacao */
+
+#description-buy {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 5%;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 5%;
+}
+
+#description-buy p{
+    font-weight: bold
+}

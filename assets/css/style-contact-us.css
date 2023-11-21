@@ -1,0 +1,113 @@
+main {
+    background-color: #f5f5f5;
+    padding: 5% 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 5% 10%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+#grid {
+    width: 100%;
+    height: auto;
+}
+
+/* mapa */
+
+#maps {
+    width: 100%;
+    height: 50vh;
+}
+
+
+ /* form e contatos */
+
+#contact-us-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.linha-contact-us {
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    margin: 15px;
+}
+
+.inputs-texts-form {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+#button-form {
+    padding: 0.5rem 1rem;
+    margin-top: 0.2rem;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px; 
+}
+
+
+#contact-media-social {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 1200px) {
+    #contact-us-parte {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    #maps {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 500px) {
+    #maps {
+        height: 30vh;
+    }
+
+    #contact-media-social {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    #maps {
+        height: auto;
+    }
+}
+
+.link-social {
+    color: #000;
+}

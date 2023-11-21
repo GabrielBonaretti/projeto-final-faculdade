@@ -1,0 +1,14 @@
+/* foter */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0, 0.80);
+    color: #fff;
+    padding: 50px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+}
